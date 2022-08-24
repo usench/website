@@ -1,12 +1,25 @@
 <template>
-  <footer class="footer">
-    <div class="center">
-      <p class="bei-an">
-        <a href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">浙ICP备XXXXX号</a>
-      </p>
-      <p class="name">2014-2024 版权所有©杭州飞致云信息科技有限公司</p>
+  <div class="footer-container">
+    <div class="content">
+      <div class="name">FIT2CLOUD 飞致云</div>
+      <div class="line"/>
+      <div class="footer">
+        <div class="info">
+          <div>Designed by FIT2CLOUD Inc.</div>
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">浙ICP备XXXXX号</a>
+        </div>
+
+        <div class="links">
+          <a href="" target="_blank" rel="noopener">文档</a>
+          <a href="" target="_blank" rel="noopener">GitHub</a>
+          <a href="" target="_blank" rel="noopener">博客</a>
+          <a href="">关于我们</a>
+          <a href="mailto:support@fit2cloud.com">联系我们</a>
+        </div>
+      </div>
     </div>
-  </footer>
+
+  </div>
 </template>
 
 <script>
@@ -16,22 +29,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.footer {
+.footer-container {
   background: #202942;
-  padding: 60px 0;
-  position: relative;
-  color: #adb5bd;
+  padding: 64px 0;
 
-  .center {
-    text-align: center;
-  }
+  .content {
+    max-width: 1128px;
+    margin: 0 auto;
+    color: #adb5bd;
 
-  .bei-an {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 0;
+    .name {
+      color: #f8f9fc;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      font-weight: 800;
+    }
+
+    img {
+      height: 32px;
+    }
+
+    .line {
+      border-top: 1px solid rgba(243, 229, 200, 0.26);
+      margin: 24px 0;
+    }
+
+    .footer {
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      font-size: 16px;
+      line-height: 24px;
+
+      .info {
+        align-items: center;
+        display: flex;
+
+        a {
+          margin-left: 10px;
+        }
+      }
+
+      .links {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        gap: 32px;
+      }
+    }
 
     a {
       color: inherit;
@@ -39,15 +84,6 @@ export default {
       background-color: transparent;
     }
   }
-
-  .name {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0.25rem;
-  }
-
 }
+
 </style>

@@ -7,11 +7,11 @@
       <div class="split">
       </div>
       <div class="nav">
-        <a class="nav-item">主页</a>
-        <a class="nav-item">文档</a>
-        <a class="nav-item">GitHub</a>
-        <a class="nav-item">联系我们</a>
-        <a class="nav-item gold-btn ripple">快速开始</a>
+        <a class="nav-item" rel="noopener">主页</a>
+        <a class="nav-item" rel="noopener">文档</a>
+        <a class="nav-item" rel="noopener">GitHub</a>
+        <a class="nav-item" rel="noopener">联系我们</a>
+        <a class="nav-item gold-btn ripple" rel="noopener">快速开始</a>
       </div>
     </div>
   </div>
