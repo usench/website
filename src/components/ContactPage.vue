@@ -6,15 +6,15 @@
         <div class="text">加入社区</div>
       </div>
       <div class="content">
-        <div class="card" @click="toggle('1')">
-          <div class="title" v-if="titleShow('1')">微信公众号</div>
-          <img src="../assets/wechat-official.jpeg" alt="" :class="imgClass('1')"/>
+        <div class="card" id="1" @click="toggle(1)" @mouseenter="enter(1)" @mouseleave="leave(1)">
+          <div class="title" v-if="titleShow(1)">微信公众号</div>
+          <img src="../assets/wechat-official.jpeg" alt="" :class="imgClass(1)"/>
         </div>
-        <div class="card" @click="toggle('2')">
-          <div class="title" v-if="titleShow('2')">技术交流群</div>
-          <img src="../assets/wechat-group.png" alt="" :class="imgClass('2')"/>
+        <div class="card" id="2" @click="toggle(2)" @mouseenter="enter(2)" @mouseleave="leave(2)">
+          <div class="title" v-if="titleShow(2)">技术交流群</div>
+          <img src="../assets/wechat-group.png" alt="" :class="imgClass(2)"/>
         </div>
-        <div class="card">
+        <div class="card" id="3" @mouseenter="enter(3)" @mouseleave="leave(3)">
           <div class="title">开源社区</div>
           <img src="../assets/github.svg" alt=""/>
         </div>
@@ -24,51 +24,75 @@
 </template>
 
 <script lang="ts">
-import {computed, defineComponent, ref} from "vue";
+import {computed, defineComponent, onMounted, ref} from "vue";
+import anime from "animejs";
 
 interface Card {
-  imgClass: string,
-  titleShow: boolean
+  imgClass?: string,
+  titleShow?: boolean,
+  anime?: any
 }
 
 export default defineComponent({
   name: "ContactPage",
   setup() {
-    const CardMap = ref<Map<string, Card>>(new Map())
-    CardMap.value.set("1", {imgClass: "", titleShow: true})
-    CardMap.value.set("2", {imgClass: "", titleShow: true})
+    const CardMap = ref<Map<string | number, Card>>(new Map())
+    CardMap.value.set(1, {imgClass: "", titleShow: true})
+    CardMap.value.set(2, {imgClass: "", titleShow: true})
+    CardMap.value.set(3, {})
 
     const titleShow = computed(() => {
-      return (id: string) => {
+      return (id: string | number) => {
         let card: Card | undefined = CardMap.value.get(id)
-        if (card != undefined) {
-          return card.titleShow
-        }
+        return card?.titleShow
       }
     })
 
     const imgClass = computed(() => {
-      return (id: string) => {
+      return (id: string | number) => {
         let card: Card | undefined = CardMap.value.get(id)
-        if (card != undefined) {
-          return card.imgClass
-        }
+        return card?.imgClass
       }
     })
 
-    function toggle(id: string) {
+    function toggle(id: string | number) {
       let card: Card | undefined = CardMap.value.get(id)
       if (card != undefined) {
         card.imgClass = card.imgClass === "big" ? "" : "big"
         card.titleShow = !card.titleShow
+        card?.anime.play()
       }
     }
+
+    function enter(id: string | number) {
+      let card: Card | undefined = CardMap.value.get(id)
+      card?.anime.play()
+    }
+
+    function out(id: string | number) {
+      let card: Card | undefined = CardMap.value.get(id)
+      card?.anime.reset()
+    }
+
+    onMounted(() => {
+      const bg1 = "linear-gradient(135deg, var(--primary-color), var(--primary-hover-color))"
+      const bg2 = "linear-gradient(315deg, var(--primary-color), var(--primary-hover-color))"
+      CardMap.value.forEach((v, k) => {
+        v.anime = anime({
+          targets: document.getElementById(k.toString()),
+          background: [bg1, bg2],
+          autoplay: false,
+        });
+      })
+    })
 
     return {
       CardMap,
       imgClass,
       titleShow,
-      toggle
+      toggle,
+      enter,
+      leave: out
     }
   }
 })
@@ -113,7 +137,7 @@ export default defineComponent({
       width: 256px;
       height: 256px;
       box-shadow: 0 24px 24px rgb(28 26 39 / 24%);
-      background: linear-gradient(135deg, var(--primary-color), var(--primary-hover-color));
+      //background: linear-gradient(135deg, var(--primary-color), var(--primary-hover-color));
       border-radius: 24px;
       flex-direction: column;
       justify-content: center;
@@ -125,7 +149,7 @@ export default defineComponent({
       cursor: pointer;
 
       &:hover {
-        background: linear-gradient(315deg, var(--primary-color), var(--primary-hover-color));
+        //background: linear-gradient(315deg, var(--primary-color), var(--primary-hover-color));
       }
 
       &:active {
