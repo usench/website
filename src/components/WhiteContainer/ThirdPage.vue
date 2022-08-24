@@ -2,19 +2,19 @@
   <div class="container-wrapper third-page">
     <div class="headline">提高效率，超乎你所想</div>
     <div class="content" ref="content" id="card-content">
-      <div class="card" style="opacity: 0;transform: translateY(100px)">
+      <div class="card">
         <div class="shadow"></div>
         <img src="../../assets/hj.svg" alt=""/>
         <div class="title">伴随你公司的成长</div>
         <div class="description">从你的第一个服务器到无数个服务器，1Panel 通通帮你搞定服务器管理问题。</div>
       </div>
-      <div class="card" style="opacity: 0;transform: translateY(100px)">
+      <div class="card">
         <div class="shadow"></div>
         <img src="../../assets/dp.svg" alt=""/>
         <div class="title">安全看得见</div>
         <div class="description">一键检查服务器常见安全风险，轻松解决安全隐患。</div>
       </div>
-      <div class="card" style="opacity: 0;transform: translateY(100px)">
+      <div class="card">
         <div class="shadow"></div>
         <img src="../../assets/wd.svg" alt=""/>
         <div class="title">详尽的教程和文档</div>
@@ -80,8 +80,8 @@ export default defineComponent({
     onMounted(() => {
       scrollCardAnime = anime({
         targets: '#card-content .card',
-        translateY: 0,
-        opacity: '1',
+        translateY: [100, 0],
+        opacity: [0, 1],
         duration: 600,
         delay: anime.stagger(100),
         direction: 'normal',
