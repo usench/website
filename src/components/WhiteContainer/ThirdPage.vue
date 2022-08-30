@@ -11,8 +11,8 @@
       <div class="card">
         <div class="shadow"></div>
         <img src="../../assets/dp.svg" alt=""/>
-        <div class="title">安全看得见</div>
-        <div class="description">一键检查服务器常见安全风险，轻松解决安全隐患。</div>
+        <div class="title">高效运维面板</div>
+        <div class="description">支持一键 网站/数据库/容器服务/监控/网站/FTP/文件管理等100多项服务器管理功能。</div>
       </div>
       <div class="card">
         <div class="shadow"></div>

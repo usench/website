@@ -10,7 +10,7 @@
           <div style="width: 100%">
             <div class="card-title">应用商店</div>
             <div class="line"></div>
-            <div class="card-text">海量应用，你需要的这里都有。</div>
+            <div class="card-text">通过 web 界面，轻松管理安装所用的服务器软件，海量应用，你需要的这里都有。</div>
           </div>
         </div>
         <div class="card">
@@ -18,9 +18,9 @@
             <img src="../../assets/smail4.png" alt="image">
           </div>
           <div style="width: 100%">
-            <div class="card-title">应用商店</div>
+            <div class="card-title">数据库</div>
             <div class="line"></div>
-            <div class="card-text">海量应用，你需要的这里都有。</div>
+            <div class="card-text">创建 mysql、postgresql、redis 等数据库，支持备份</div>
           </div>
         </div>
       </div>
@@ -30,9 +30,9 @@
             <img src="../../assets/smail4.png" alt="image">
           </div>
           <div style="width: 100%">
-            <div class="card-title">应用商店</div>
+            <div class="card-title">终端管理</div>
             <div class="line"></div>
-            <div class="card-text">海量应用，你需要的这里都有。</div>
+            <div class="card-text">以 Web 应用程序的方式使用命令行 。</div>
           </div>
         </div>
         <div class="card">
@@ -40,9 +40,9 @@
             <img src="../../assets/smail4.png" alt="image">
           </div>
           <div style="width: 100%">
-            <div class="card-title">应用商店</div>
+            <div class="card-title">文件管理</div>
             <div class="line"></div>
-            <div class="card-text">海量应用，你需要的这里都有。</div>
+            <div class="card-text">支持上传、下载、打包、解压等文件操作 。</div>
           </div>
         </div>
       </div>
