@@ -5,7 +5,7 @@
       <div class="card-content">
         <div class="card">
           <div style="min-width: 160px">
-            <img src="../../assets/smail4.png" alt="image" style="position:absolute;top:6px;left:0;width: 200px;">
+            <img src="../../assets/smail4.png" alt="image">
           </div>
           <div style="width: 100%">
             <div class="card-title">应用商店</div>
@@ -15,7 +15,7 @@
         </div>
         <div class="card">
           <div style="min-width: 160px">
-            <img src="../../assets/smail4.png" alt="image" style="position:absolute;top:6px;left:0;width: 200px;">
+            <img src="../../assets/smail4.png" alt="image">
           </div>
           <div style="width: 100%">
             <div class="card-title">应用商店</div>
@@ -27,7 +27,7 @@
       <div class="card-content">
         <div class="card">
           <div style="min-width: 160px">
-            <img src="../../assets/smail4.png" alt="image" style="position:absolute;top:6px;left:0;width: 200px;">
+            <img src="../../assets/smail4.png" alt="image">
           </div>
           <div style="width: 100%">
             <div class="card-title">应用商店</div>
@@ -37,7 +37,7 @@
         </div>
         <div class="card">
           <div style="min-width: 160px">
-            <img src="../../assets/smail4.png" alt="image" style="position:absolute;top:6px;left:0;width: 200px;">
+            <img src="../../assets/smail4.png" alt="image">
           </div>
           <div style="width: 100%">
             <div class="card-title">应用商店</div>
@@ -61,18 +61,24 @@ export default {
     const Hided = "Hided"
     const Showing = "Showing"
     const Showed = "Showed"
+    const Normal = "normal"
+    const Reverse = "reverse"
     let ScrollCardStatus = Hided
 
     const scrollCardAnime = anime({
       targets: '#scroll-card .card',
-      translateY: 200,
-      opacity: '0',
+      translateY: [200, 0],
+      opacity: [0, 1],
       duration: 600,
-      direction: 'reverse',
+      delay: anime.stagger(100),
+      direction: 'normal',
       easing: 'easeInOutSine',
       autoplay: false,
+      begin: (anim) => {
+        ScrollCardStatus = anim.direction === Normal ? Showing : Hiding
+      },
       complete: function (anim) {
-        ScrollCardStatus = anim.direction === "reverse" ? Showed : Hided
+        ScrollCardStatus = anim.direction === Normal ? Showed : Hided
       }
     });
 
@@ -84,31 +90,29 @@ export default {
       top = top + 160
 
       if (top < windowHeight) {
-        if (ScrollCardStatus === Hiding) {
-          if (scrollCardAnime.direction === "normal") {
+        if (scrollCardAnime.began) {
+          if (scrollCardAnime.direction === Reverse) {
             scrollCardAnime.reverse()
           }
         }
         if (ScrollCardStatus === Hided) {
-          if (scrollCardAnime.direction === "normal") {
+          if (scrollCardAnime.direction === Reverse) {
             scrollCardAnime.reverse()
           }
-          ScrollCardStatus = scrollCardAnime.direction === "reverse" ? Showing : Hiding
           scrollCardAnime.play()
         }
       }
 
       if (top > windowHeight) {
-        if (ScrollCardStatus === Showing) {
-          if (scrollCardAnime.direction === "reverse") {
+        if (scrollCardAnime.began) {
+          if (scrollCardAnime.direction === Normal) {
             scrollCardAnime.reverse()
           }
         }
         if (ScrollCardStatus === Showed) {
-          if (scrollCardAnime.direction === "reverse") {
+          if (scrollCardAnime.direction === Normal) {
             scrollCardAnime.reverse()
           }
-          ScrollCardStatus = scrollCardAnime.direction === "reverse" ? Showing : Hiding
           scrollCardAnime.play()
         }
       }
@@ -119,6 +123,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.black-container .container-wrapper.third-page {
+  min-height: unset;
+  padding-bottom: 128px;
+}
+
 .headline {
   padding-top: 15vh;
   text-align: center;
@@ -148,6 +157,13 @@ export default {
       overflow: hidden;
       box-shadow: 0 24px 24px #1c1a273d;
       background: linear-gradient(135deg, var(--primary-color), var(--primary-hover-color));
+
+      img {
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 200px;
+      }
 
       & .card-title {
         z-index: 1;
