@@ -13,7 +13,7 @@
           </div>
         </div>
         <div>
-          <img src="../../assets/p3.png" alt="image" style="width: 512px;height: 512px;"/>
+          <img src="../../assets/【插图】页面元素插图-05.svg" alt="image" style="width: 512px;height: 512px;"/>
         </div>
       </div>
     </div>

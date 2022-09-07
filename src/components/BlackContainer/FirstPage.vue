@@ -11,7 +11,7 @@
         </div>
       </div>
       <div>
-        <img src="../../assets/p1.png" alt="image" style="width: 512px;height: 512px;"/>
+        <img src="../../assets/【插图】页面元素插图-01.svg" alt="image" style="width: 512px;height: 512px;"/>
       </div>
     </div>
   </div>

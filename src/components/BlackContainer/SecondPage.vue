@@ -9,7 +9,7 @@
         <div class="text-3">可视化管理，操作简单，快速建站，一键安装各种应用。</div>
       </div>
       <div>
-        <img src="../../assets/p3.png" alt="image"/>
+        <img src="../../assets/【插图】页面元素插图-02.svg" alt="image"/>
       </div>
     </div>
     <div class="content row-reverse">
@@ -20,7 +20,7 @@
         <div class="text-3">防火墙，安全审计，最小漏洞暴露面、快速修复。</div>
       </div>
       <div>
-        <img src="../../assets/p2.png" alt="image"/>
+        <img src="../../assets/【插图】页面元素插图-03.svg" alt="image"/>
       </div>
     </div>
     <div class="content">
@@ -31,7 +31,7 @@
         <div class="text-3">一键备份，一键恢复，即可防备数据丢失，也可快速复制服务器</div>
       </div>
       <div>
-        <img src="../../assets/p4.png" alt="image"/>
+        <img src="../../assets/【插图】页面元素插图-04.svg" alt="image"/>
       </div>
     </div>
     <div class="content"></div>

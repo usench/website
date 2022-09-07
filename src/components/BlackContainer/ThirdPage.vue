@@ -4,8 +4,8 @@
     <div class="card-container" id="scroll-card">
       <div class="card-content">
         <div class="card">
-          <div style="min-width: 160px">
-            <img src="../../assets/smail4.png" alt="image">
+          <div class="img">
+            <img src="../../assets/【插图】页面元素插图-06.svg" alt="image">
           </div>
           <div style="width: 100%">
             <div class="card-title">应用商店</div>
@@ -14,8 +14,8 @@
           </div>
         </div>
         <div class="card">
-          <div style="min-width: 160px">
-            <img src="../../assets/smail4.png" alt="image">
+          <div class="img">
+            <img src="../../assets/【插图】页面元素插图-07.svg" alt="image">
           </div>
           <div style="width: 100%">
             <div class="card-title">数据库</div>
@@ -26,8 +26,8 @@
       </div>
       <div class="card-content">
         <div class="card">
-          <div style="min-width: 160px">
-            <img src="../../assets/smail4.png" alt="image">
+          <div class="img">
+            <img src="../../assets/【插图】页面元素插图-08.svg" alt="image">
           </div>
           <div style="width: 100%">
             <div class="card-title">终端管理</div>
@@ -36,8 +36,8 @@
           </div>
         </div>
         <div class="card">
-          <div style="min-width: 160px">
-            <img src="../../assets/smail4.png" alt="image">
+          <div class="img">
+            <img src="../../assets/【插图】页面元素插图-09.svg" alt="image">
           </div>
           <div style="width: 100%">
             <div class="card-title">文件管理</div>
@@ -158,11 +158,15 @@ export default {
       box-shadow: 0 24px 24px #1c1a273d;
       background: linear-gradient(135deg, var(--primary-color), var(--primary-hover-color));
 
-      img {
-        position: absolute;
-        top: 6px;
-        left: 0;
-        width: 200px;
+      .img {
+        display: flex;
+        align-items: center;
+        margin-left: -20px;
+        margin-right: 20px;
+
+        img {
+          width: 180px;
+        }
       }
 
       & .card-title {
