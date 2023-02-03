@@ -55,13 +55,14 @@ export default {
       display: flex;
 
       & .nav-item {
+        position: relative;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         display: flex;
         align-items: center;
-        text-align: center;
+        justify-content: center;
         color: #1F2329;
         cursor: pointer;
         margin: 8px 0;
@@ -70,6 +71,16 @@ export default {
 
         &:hover {
           color: #005EEB;
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            width: 14px;
+            height: 4px;
+            background-color: #005EEB;
+            border-radius: 7px;
+          }
         }
       }
 
