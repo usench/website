@@ -98,7 +98,7 @@ export default defineComponent({
     .install-window {
       width: 720px;
       min-height: 368px;
-      background: url("../assets/window.png") no-repeat center center;
+      background: url("../assets/window.svg") no-repeat center center;
       background-size: cover;
     }
 
