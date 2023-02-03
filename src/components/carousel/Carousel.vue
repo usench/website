@@ -4,7 +4,7 @@
       <div class="title">{{ title }}</div>
       <div class="description">{{ description }}</div>
     </div>
-    <img :src="src" :alt="title">
+    <img :src="img" :alt="title">
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <script setup lang="ts">
-const props = defineProps({
+defineProps({
   title: String,
   description: String,
   img: {
@@ -23,7 +23,6 @@ const props = defineProps({
     required: true
   }
 });
-const src = new URL(props.img, import.meta.url)
 </script>
 
 <style lang="scss" scoped>

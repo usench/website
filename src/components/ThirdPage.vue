@@ -12,16 +12,16 @@
         <div class="siema">
           <carousel title="全部应用、已安装、可更新"
                     description="这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍！"
-                    img="/src/assets/app-store.png"/>
+                    :img="appStore"/>
           <carousel title="数据库"
                     description="这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍！"
-                    img="/src/assets/illustration-04.png"/>
+                    :img="appStore"/>
           <carousel title="终端管理"
                     description="这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍！"
-                    img="/src/assets/illustration-04.png"/>
+                    :img="appStore"/>
           <carousel title="文件管理"
                     description="这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍！"
-                    img="/src/assets/illustration-04.png"/>
+                    :img="appStore"/>
         </div>
       </div>
     </div>
@@ -40,6 +40,7 @@ export default {
 </script>
 
 <script setup lang="ts">
+import appStore from "../assets/app-store.png"
 import Siema from 'siema';
 import {onBeforeUnmount, onMounted, ref} from "vue";
 
@@ -47,7 +48,7 @@ const actives = ref([true, false, false, false])
 
 let siema: Siema;
 let interval = setInterval(() => {
-  // siema.next()
+  siema.next()
 }, 8000)
 
 const changeState = (index: number) => {
