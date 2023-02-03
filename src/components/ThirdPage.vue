@@ -47,13 +47,18 @@ import {onBeforeUnmount, onMounted, ref} from "vue";
 const actives = ref([true, false, false, false])
 
 let siema: Siema;
-let interval = setInterval(() => {
-  siema.next()
-}, 8000)
+let interval: number;
+const initInterval = () => {
+  clearInterval(interval)
+  interval = setInterval(() => {
+    siema.next()
+  }, 6000)
+}
 
 const changeState = (index: number) => {
   actives.value.fill(false)
   actives.value[index] = true
+  initInterval()
 }
 
 const goTo = (index: number) => {
@@ -65,6 +70,9 @@ const goTo = (index: number) => {
 onMounted(() => {
   siema = new Siema({
     loop: true,
+    onInit() {
+      initInterval()
+    },
     onChange() {
       changeState(siema.currentSlide)
     }
