@@ -1,7 +1,7 @@
-const Scrolls = []
+const Scrolls: any = []
 
 window.onscroll = function () {
-  Scrolls.forEach(func => {
+  Scrolls.forEach((func: any) => {
     func()
   })
 }

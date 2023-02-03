@@ -1,11 +1,8 @@
 <template>
-  <div class="container-wrapper first-page">
-    <div class="headline">
-      <div class="gold-text">构建运维新方式</div>
-    </div>
-    <div>
+  <div class="fourth-page">
+    <div class="fourth-page-container">
       <div class="title">下载并使用</div>
-      <div class="description">一行脚本代码即可快速安装使用</div>
+      <div class="description">只需一行脚本代码，即可快速安装使用</div>
       <div class="install-window">
         <div id="type-code"></div>
         <div id="typed-strings">
@@ -15,7 +12,7 @@
               <span style="color: #e06c75"> -sSL</span>
               <span> https://github.com/KubeOperator/KubeOperator/releases/latest/download/quick-start.sh | sh</span>
             </p>
-            <p>Installing.^200.^400.^600 Completed!</p>
+            <p>Installing.^200.^300.^400 Completed!</p>
             <p style="color: #98c379">server is running at http://localhost:8080</p>
           </div>
         </div>
@@ -30,7 +27,7 @@ import Typed from "typed.js";
 import Scrolls from "@/scroll";
 
 export default defineComponent({
-  name: "FirstPage",
+  name: "FourthPage",
   setup() {
     onMounted(() => {
       let typing = true
@@ -67,70 +64,58 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.first-page {
-  position: relative;
+.fourth-page {
+  background-color: #FFF;
 
-  .headline {
-    margin-bottom: 64px;
-    height: 100%;
-    width: 100%;
+  .fourth-page-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    .gold-text {
-      background: linear-gradient(60deg, #cfc09f 22%, #cfc09f 26%, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: #fff;
-      position: relative;
-      text-transform: uppercase;
-      font-size: 48px;
-      margin: 0;
-      font-weight: 800;
-      line-height: 56px;
+    max-width: 1128px;
+    margin: 0 auto;
+    position: relative;
+    height: 600px;
+
+    .title {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      color: #646A73;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #646A73;
+
+      margin-bottom: 24px;
+    }
+
+    .install-window {
+      width: 720px;
+      min-height: 368px;
+      background: url("../assets/window.png") no-repeat center center;
+      background-size: cover;
+    }
+
+    #type-code {
+      color: #FFFFFF;
+      width: 100%;
+      height: 100%;
+      padding: 104px 48px 48px;
+      box-sizing: border-box;
+      letter-spacing: -.02em;
+      word-break: break-all;
+      white-space: pre-line;
+      font-family: monospace;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
     }
   }
-
-  .title {
-    color: #1c1d20;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 48px;
-    text-align: center;
-  }
-
-  .description {
-    text-align: center;
-    color: #747778;
-    white-space: pre-line;
-    margin: 16px auto 0;
-    font-size: 18px;
-    line-height: 26px;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .install-window {
-    margin: 64px auto 128px;
-    width: 900px;
-    height: 512px;
-    background: url("../../assets/window.svg") no-repeat center center;
-  }
 }
-
-#type-code {
-  color: #FFFFFF;
-  width: 100%;
-  height: 100%;
-  padding: 128px 48px 48px;
-  box-sizing: border-box;
-  letter-spacing: -.02em;
-  word-break: break-all;
-  white-space: pre-line;
-  font-family: monospace;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 28px;
-}
-
 </style>

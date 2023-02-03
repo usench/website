@@ -1,10 +1,8 @@
 body {
   //font-family: "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", sans-serif;
-  font-family: STHeiti, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --black-bg-color: #1c1d20;
-  --white-bg-color: #f6f6f6;
-  --primary-color: #c1ab84;
-  --primary-hover-color: #f3e5c8;
+  font-family: 'PingFang SC', STHeiti, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", helvetica, arial, sans-serif;;
+  --primary-color: #005EEB;
+  --primary-hover-color: #005EEBCC;
   --padding-max-width: 0;
   height: 100%;
 }
@@ -30,7 +28,7 @@ body {
   pointer-events: none;
   background-image: radial-gradient(
       circle,
-      #FFF 10%,
+      #005EEB 10%,
       rgba(0, 0, 0, 0) 10.01%
   );
   background-repeat: no-repeat;

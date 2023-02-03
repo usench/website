@@ -6,14 +6,14 @@
       <div class="footer">
         <div class="info">
           <div>Designed by FIT2CLOUD Inc.</div>
-          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">浙ICP备XXXXX号</a>
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">浙ICP备14038283号-5</a>
         </div>
 
         <div class="links">
-          <a href="" target="_blank" rel="noopener">文档</a>
-          <a href="" target="_blank" rel="noopener">GitHub</a>
-          <a href="" target="_blank" rel="noopener">博客</a>
-          <a href="">关于我们</a>
+          <a href="https://1panel.cn/docs" target="_blank" rel="noopener">文档</a>
+          <a href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://blog.fit2cloud.com/" target="_blank" rel="noopener">博客</a>
+          <a href="https://www.fit2cloud.com/about/index.html" target="_blank">关于我们</a>
           <a href="mailto:support@fit2cloud.com">联系我们</a>
         </div>
       </div>
@@ -24,19 +24,19 @@
 
 <script>
 export default {
-  name: "FooterPage"
+  name: 'FooterPage'
 }
 </script>
 
 <style lang="scss" scoped>
 .footer-container {
-  background: #202942;
+  background: #161618;
   padding: 64px 0;
 
   .content {
     max-width: 1128px;
     margin: 0 auto;
-    color: #adb5bd;
+    color: #FFFFFF;
 
     .name {
       color: #f8f9fc;
@@ -58,7 +58,7 @@ export default {
       justify-content: space-between;
       align-items: center;
       display: flex;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 24px;
 
       .info {
