@@ -3,7 +3,7 @@
     <div class="fifth-page-container">
       <div class="header">
         <div class="headline">提高效率，超乎你所想</div>
-        <div class="subheading">可视化管理，操作简单，快速建站，一键安装各种应用</div>
+        <div class="subheading">可视化管理，操作简单，文档详尽</div>
       </div>
       <div class="content" ref="content" id="card-content">
         <div class="card">

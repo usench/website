@@ -5,22 +5,22 @@
       <div class="content">
         <div class="navigation">
           <navigation title="应用商店" description="海量应用，轻松安装" :active="actives[0]" @click="goTo(0)"/>
-          <navigation title="数据库" description="创建管理，数据备份" :active="actives[1]" @click="goTo(1)"/>
-          <navigation title="终端管理" description="创建管理，数据备份" :active="actives[2]" @click="goTo(2)"/>
+          <navigation title="数据库" description="快速创建，安全可靠" :active="actives[1]" @click="goTo(1)"/>
+          <navigation title="终端管理" description="操作方便，工作高效" :active="actives[2]" @click="goTo(2)"/>
           <navigation title="文件管理" description="常用操作，整理归纳" :active="actives[3]" @click="goTo(3)"/>
         </div>
         <div class="siema">
           <carousel title="全部应用、已安装、可更新"
-                    description="这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍！"
+                    description="通过web界面就可以轻松管理安装所用的服务器软件，还有扩展插件"
                     :img="appStore"/>
           <carousel title="数据库"
-                    description="这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍！"
+                    description="一键创建数据库，一键设置备份还原"
                     :img="appStore"/>
           <carousel title="终端管理"
-                    description="这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍！"
+                    description="高效管控，一键接入"
                     :img="appStore"/>
           <carousel title="文件管理"
-                    description="这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍这是应用商店的一段详细介绍！"
+                    description="方便高效的文件管理器，支持上传、下载、打包、解压以及文件编辑查看"
                     :img="appStore"/>
         </div>
       </div>

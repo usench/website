@@ -47,7 +47,7 @@
           <div class="text-1">1Panel 可以帮你</div>
           <div class="split">-</div>
           <div class="text-2">快速建站</div>
-          <div class="text-3">一键建站</div>
+          <div class="text-3">域名绑定，一键部署SSL证书，更改网站配置等网站管理功能</div>
         </div>
         <img src="../assets/illustration-05.png" alt="image"/>
       </div>
