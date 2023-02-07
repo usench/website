@@ -97,8 +97,8 @@ export default {
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
 
       @media only screen and (max-width: 833px) {
-        font-size: 36px;
-        line-height: 32px;
+        font-size: 32px;
+        line-height: 28px;
         align-items: center;
       }
     }
@@ -118,6 +118,7 @@ export default {
       @media only screen and (max-width: 833px) {
         align-items: center;
         font-size: 14px;
+        text-align: center;
       }
     }
   }

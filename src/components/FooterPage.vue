@@ -5,7 +5,7 @@
       <div class="line"/>
       <div class="footer">
         <div class="info">
-          <div>Designed by FIT2CLOUD Inc.</div>
+          <div class="text">Designed by FIT2CLOUD Inc.</div>
           <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">浙ICP备14038283号-5</a>
         </div>
 
@@ -72,9 +72,12 @@ export default {
       .info {
         align-items: center;
         display: flex;
+        gap: 20px;
 
-        a {
-          margin-left: 10px;
+        .text {
+          @media only screen and (max-width: 833px) {
+            display: none;
+          }
         }
       }
 

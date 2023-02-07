@@ -137,6 +137,10 @@ export default defineComponent({
         font-size: 32px;
         line-height: 42px;
         color: #FFFFFF;
+        @media only screen and (max-width: 833px) {
+          font-size: 24px;
+          line-height: 28px;
+        }
       }
 
       .subheading {
@@ -144,6 +148,10 @@ export default defineComponent({
         font-size: 20px;
         line-height: 28px;
         color: #FFFFFF;
+        @media only screen and (max-width: 833px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
     }
 
@@ -193,6 +201,9 @@ export default defineComponent({
           line-height: 22px;
           padding: 0 38px;
           text-align: left;
+          @media only screen and (max-width: 833px) {
+            text-align: center;
+          }
         }
       }
     }

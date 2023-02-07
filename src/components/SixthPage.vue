@@ -66,8 +66,8 @@ export default {
         color: #FFFFFF;
 
         @media only screen and (max-width: 833px) {
-          font-size: 24px;
-          line-height: 40px;
+          font-size: 20px;
+          line-height: 36px;
         }
       }
 
@@ -78,7 +78,7 @@ export default {
 
         color: #FFFFFF;
         @media only screen and (max-width: 833px) {
-          font-size: 30px;
+          font-size: 24px;
           line-height: 36px;
         }
       }

@@ -124,6 +124,7 @@ export default {
       height: 48px;
       display: flex;
       justify-content: center;
+      text-align: center;
       color: #646A73;
     }
   }
@@ -161,31 +162,8 @@ export default {
       font-size: 32px;
       line-height: 48px;
       @media only screen and (max-width: 833px) {
-        font-size: 30px;
+        font-size: 24px;
         line-height: 36px;
-      }
-    }
-
-    .text-2 {
-      @extend .flex-text;
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 48px;
-      @media only screen and (max-width: 833px) {
-        font-size: 32px;
-        line-height: 40px;
-      }
-    }
-
-    .text-3 {
-      @extend .flex-text;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 48px;
-      @media only screen and (max-width: 833px) {
-        font-size: 20px;
-        line-height: 40px;
-        padding: 0 10px;
       }
     }
 
@@ -197,6 +175,35 @@ export default {
       font-size: 24px;
       line-height: 48px;
       color: #005EEB;
+
+      @media only screen and (max-width: 833px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 10px;
+      }
+    }
+
+    .text-2 {
+      @extend .flex-text;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 48px;
+      @media only screen and (max-width: 833px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    .text-3 {
+      @extend .flex-text;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 48px;
+      @media only screen and (max-width: 833px) {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 10px;
+      }
     }
   }
 

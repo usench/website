@@ -44,6 +44,10 @@ export default {
 
     & .logo img {
       height: 36px;
+      @media only screen and (max-width: 833px) {
+        height: 36px;
+        padding: 6px;
+      }
     }
 
     & .split {

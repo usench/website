@@ -84,6 +84,11 @@ export default defineComponent({
       line-height: 44px;
       color: #646A73;
       margin-bottom: 8px;
+
+      @media only screen and (max-width: 833px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
     }
 
     .description {
@@ -93,6 +98,11 @@ export default defineComponent({
       color: #646A73;
 
       margin-bottom: 24px;
+
+      @media only screen and (max-width: 833px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
 
     .install-window {
@@ -105,6 +115,7 @@ export default defineComponent({
         background:#464646;
         border-radius: 20px;
         width: 90%;
+        min-height: 320px;
       }
     }
 
@@ -121,8 +132,12 @@ export default defineComponent({
       font-size: 20px;
       font-weight: 500;
       line-height: 28px;
+
       @media only screen and (max-width: 833px) {
         padding: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
       }
     }
   }
