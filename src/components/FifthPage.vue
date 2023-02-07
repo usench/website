@@ -158,7 +158,7 @@ export default defineComponent({
     .content {
       flex-wrap: wrap;
       gap: 24px;
-      margin: 54px auto 0;
+      margin: 54px 0;
       display: flex;
       @media only screen and (max-width: 833px) {
         flex-direction: column;
