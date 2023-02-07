@@ -53,9 +53,5 @@ defineProps({
       color: #646A73;
     }
   }
-
-  img {
-    height: 480px;
-  }
 }
 </style>
