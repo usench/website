@@ -102,7 +102,9 @@ export default defineComponent({
       background-size: contain;
 
       @media only screen and (max-width: 833px) {
-        width: auto;
+        background:#464646;
+        border-radius: 20px;
+        width: 90%;
       }
     }
 
@@ -119,6 +121,9 @@ export default defineComponent({
       font-size: 20px;
       font-weight: 500;
       line-height: 28px;
+      @media only screen and (max-width: 833px) {
+        padding: 24px;
+      }
     }
   }
 }

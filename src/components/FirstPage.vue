@@ -17,7 +17,7 @@
           </div>
         </div>
       </div>
-      <img class="img" src="../assets/illustration-01.png" alt="image" style="height: 600px;"/>
+      <img class="img" src="../assets/illustration-01.png" alt="image"/>
     </div>
   </div>
 </template>
@@ -48,6 +48,8 @@ export default {
 
   @media only screen and (max-width: 833px) {
     flex-direction: column;
+    justify-content: center;
+    gap: 80px;
   }
 
   .img {
@@ -84,7 +86,6 @@ export default {
       @extend .flex-column-center-start;
       gap: 30px;
 
-      width: 530px;
       height: 182px;
       min-height: 182px;
 
@@ -96,6 +97,8 @@ export default {
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
 
       @media only screen and (max-width: 833px) {
+        font-size: 36px;
+        line-height: 32px;
         align-items: center;
       }
     }
@@ -114,6 +117,7 @@ export default {
 
       @media only screen and (max-width: 833px) {
         align-items: center;
+        font-size: 14px;
       }
     }
   }
@@ -123,6 +127,9 @@ export default {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    @media only screen and (max-width: 833px) {
+      margin-top: 40px;
+    }
   }
 
   .quick-start-btn {

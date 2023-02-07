@@ -51,7 +51,10 @@
         font-weight: 600;
         font-size: 32px;
         line-height: 42px;
-
+        @media only screen and (max-width: 833px) {
+          font-size: 24px;
+          line-height: 36px;
+        }
       }
 
       .text {

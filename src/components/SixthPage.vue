@@ -55,7 +55,6 @@ export default {
 
       @media only screen and (max-width: 833px) {
         width: 90%;
-        //height: 240px;
         align-items: center;
       }
 
@@ -65,6 +64,11 @@ export default {
         line-height: 48px;
 
         color: #FFFFFF;
+
+        @media only screen and (max-width: 833px) {
+          font-size: 24px;
+          line-height: 40px;
+        }
       }
 
       .title {
@@ -73,6 +77,10 @@ export default {
         line-height: 48px;
 
         color: #FFFFFF;
+        @media only screen and (max-width: 833px) {
+          font-size: 30px;
+          line-height: 36px;
+        }
       }
 
       .description {
@@ -83,15 +91,17 @@ export default {
         color: #FFFFFF;
         @media only screen and (max-width: 833px) {
           text-align: center;
+          font-size: 14px;
+          line-height: 24px;
         }
       }
     }
 
     img {
       width: 386px;
-      //@media only screen and (max-width: 833px) {
-      //  display: none;
-      //}
+      @media only screen and (max-width: 833px) {
+        width: 90%;
+      }
     }
   }
 
