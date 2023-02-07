@@ -32,6 +32,12 @@ export default {
     margin: 0 auto;
     position: relative;
 
+    @media only screen and (max-width: 833px) {
+      flex-direction: column;
+      justify-content: center;
+      height: 620px;
+    }
+
     .content {
       width: 840px;
       height: 240px;
@@ -46,6 +52,12 @@ export default {
       justify-content: center;
       align-items: flex-end;
       gap: 8px;
+
+      @media only screen and (max-width: 833px) {
+        width: 90%;
+        //height: 240px;
+        align-items: center;
+      }
 
       .subject {
         font-weight: 500;
@@ -69,11 +81,17 @@ export default {
         line-height: 48px;
 
         color: #FFFFFF;
+        @media only screen and (max-width: 833px) {
+          text-align: center;
+        }
       }
     }
 
     img {
       width: 386px;
+      //@media only screen and (max-width: 833px) {
+      //  display: none;
+      //}
     }
   }
 

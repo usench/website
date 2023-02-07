@@ -77,6 +77,11 @@
       padding: 0;
       gap: 140px;
 
+      @media only screen and (max-width: 833px) {
+        flex-direction: column;
+        gap: 10px;
+      }
+
       .card {
         width: 240px;
         height: 240px;

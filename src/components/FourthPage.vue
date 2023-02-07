@@ -99,7 +99,11 @@ export default defineComponent({
       width: 720px;
       min-height: 368px;
       background: url("../assets/window.svg") no-repeat center center;
-      background-size: cover;
+      background-size: contain;
+
+      @media only screen and (max-width: 833px) {
+        width: auto;
+      }
     }
 
     #type-code {

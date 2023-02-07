@@ -120,6 +120,10 @@ export default defineComponent({
     margin: 0 auto;
     position: relative;
 
+    @media only screen and (max-width: 833px) {
+      height: auto;
+    }
+
     .header {
       margin-top: 44px;
       display: flex;
@@ -148,6 +152,10 @@ export default defineComponent({
       gap: 24px;
       margin: 54px auto 0;
       display: flex;
+      @media only screen and (max-width: 833px) {
+        flex-direction: column;
+        align-items: center;
+      }
 
       .card {
         width: 316px;
@@ -160,6 +168,9 @@ export default defineComponent({
         align-items: center;
         position: relative;
         text-align: center;
+        @media only screen and (max-width: 833px) {
+          width: 90%;
+        }
 
         img {
           margin-top: 24px;

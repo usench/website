@@ -46,9 +46,22 @@ export default {
   margin: 0 auto;
   position: relative;
 
+  @media only screen and (max-width: 833px) {
+    flex-direction: column;
+  }
+
   .img {
     position: absolute;
     right: -200px;
+    height: 600px;
+
+    @media only screen and (max-width: 833px) {
+      position: relative;
+      right: 0;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   }
 
   .flex-column-center-start {
@@ -62,6 +75,10 @@ export default {
     @extend .flex-column-center-start;
     height: 350px;
     z-index: 999;
+
+    @media only screen and (max-width: 833px) {
+      align-items: center;
+    }
 
     .title {
       @extend .flex-column-center-start;
@@ -77,6 +94,10 @@ export default {
 
       color: #005EEB;
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
+
+      @media only screen and (max-width: 833px) {
+        align-items: center;
+      }
     }
 
     .description {
@@ -90,6 +111,10 @@ export default {
       line-height: 24px;
 
       color: #646A73;
+
+      @media only screen and (max-width: 833px) {
+        align-items: center;
+      }
     }
   }
 
@@ -120,15 +145,6 @@ export default {
       width: 16px;
       margin-left: 5px;
     }
-  }
-}
-
-@keyframes shine {
-  0% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: -150% 0;
   }
 }
 </style>

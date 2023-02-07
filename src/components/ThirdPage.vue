@@ -122,6 +122,10 @@ onBeforeUnmount(() => {
         gap: 24px;
 
         width: 300px;
+
+        @media only screen and (max-width: 833px) {
+          display: none;
+        }
       }
     }
 

@@ -43,6 +43,9 @@ export default {
       font-size: 20px;
       letter-spacing: 1.5px;
       font-weight: 800;
+      @media only screen and (max-width: 833px) {
+        text-align: center;
+      }
     }
 
     img {
@@ -55,11 +58,16 @@ export default {
     }
 
     .footer {
+      display: flex;
       justify-content: space-between;
       align-items: center;
-      display: flex;
       font-size: 14px;
       line-height: 24px;
+
+      @media only screen and (max-width: 833px) {
+        flex-direction: column;
+        gap: 40px;
+      }
 
       .info {
         align-items: center;

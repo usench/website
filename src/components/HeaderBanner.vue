@@ -54,6 +54,10 @@ export default {
       align-items: center;
       display: flex;
 
+      @media only screen and (max-width: 833px) {
+        display: none;
+      }
+
       & .nav-item {
         position: relative;
         font-style: normal;

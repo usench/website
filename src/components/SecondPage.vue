@@ -75,6 +75,10 @@ export default {
     position: relative;
     align-items: center;
 
+    @media only screen and (max-width: 833px) {
+      flex-direction: column;
+    }
+
   }
 
   #section-1, #section-3, #section-5 {
@@ -87,6 +91,9 @@ export default {
 
   #section-2, #section-3, #section-4, #section-5 {
     height: 480px;
+    @media only screen and (max-width: 833px) {
+      height: auto;
+    }
   }
 
   #section-1 {
@@ -126,8 +133,15 @@ export default {
     width: 100%;
     height: 350px;
 
+    @media only screen and (max-width: 833px) {
+      align-items: center;
+    }
+
     &.reverse {
       align-items: flex-end;
+      @media only screen and (max-width: 833px) {
+        align-items: center;
+      }
     }
 
     .flex-text {
@@ -173,10 +187,18 @@ export default {
     width: 480px;
     position: absolute;
     right: -80px;
+    @media only screen and (max-width: 833px) {
+      position: relative;
+      right: 0;
+      object-fit: contain;
+    }
   }
 
   img.left {
     left: -80px;
+    @media only screen and (max-width: 833px) {
+      left: 0;
+    }
   }
 }
 </style>
