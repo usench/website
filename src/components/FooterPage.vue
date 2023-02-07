@@ -32,6 +32,9 @@ export default {
 .footer-container {
   background: #161618;
   padding: 64px 0;
+  @media only screen and (max-width: 833px) {
+    padding: 32px 0;
+  }
 
   .content {
     max-width: 1128px;
@@ -86,6 +89,9 @@ export default {
         align-items: center;
         display: flex;
         gap: 32px;
+        @media only screen and (max-width: 833px) {
+          display: none;
+        }
       }
     }
 
