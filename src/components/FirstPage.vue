@@ -3,12 +3,13 @@
     <div class="first-container">
       <div class="content">
         <div class="title">
-          <div>1Panel搞定Linux面板</div>
-          <div>让你轻松管理服务器</div>
+          <div>1Panel - 现代化、安全和开源的</div>
+          <div>Linux 服务器运维管理面板</div>
         </div>
         <div class="description">
-          <div>一个现代化Linux面板的开源项目</div>
-          <div>在安全、可靠、高效的同时，为你提供愉悦的管理服务器体验</div>
+          <div>通过 Web 端轻松管理 Linux 服务器，为你提供愉悦的管理服务器体验</div>
+          <div>支持LAMP/LNMP、网站和博客、数据库、FTP、SSL 、其他常用软件的一键配置</div>
+          <div></div>
         </div>
         <div class="quick-start">
           <div class="quick-start-btn ripple">
@@ -79,12 +80,13 @@ export default {
     z-index: 999;
 
     @media only screen and (max-width: 833px) {
+      gap: 20px;
       align-items: center;
     }
 
     .title {
       @extend .flex-column-center-start;
-      gap: 30px;
+      gap: 20px;
 
       height: 182px;
       min-height: 182px;
@@ -97,15 +99,17 @@ export default {
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
 
       @media only screen and (max-width: 833px) {
+        gap: 10px;
         font-size: 32px;
-        line-height: 28px;
+        line-height: 32px;
         align-items: center;
+        text-align: center;
       }
     }
 
     .description {
       @extend .flex-column-center-start;
-      justify-content: space-between;
+      justify-content: center;
       height: 56px;
       min-height: 56px;
 
