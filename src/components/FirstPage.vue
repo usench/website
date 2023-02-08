@@ -2,6 +2,10 @@
   <div class="first-page">
     <div class="first-container">
       <div class="content">
+        <div class="title-mobile">
+          <div>1Panel</div>
+          <div>现代化、安全和开源的 Linux 服务器运维管理面板</div>
+        </div>
         <div class="title">
           <div>1Panel - 现代化、安全和开源的</div>
           <div>Linux 服务器运维管理面板</div>
@@ -84,6 +88,22 @@ export default {
       align-items: center;
     }
 
+    .title-mobile {
+      display: none;
+      @media only screen and (max-width: 833px) {
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        line-height: 36px;
+        align-items: center;
+        text-align: center;
+        color: #005EEB;
+        text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
+        padding: 0 10px;
+      }
+    }
+
     .title {
       @extend .flex-column-center-start;
       gap: 20px;
@@ -97,12 +117,7 @@ export default {
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
 
       @media only screen and (max-width: 833px) {
-        height: 140px;
-        gap: 10px;
-        font-size: 20px;
-        line-height: 20px;
-        align-items: center;
-        text-align: center;
+        display: none;
       }
     }
 
@@ -122,6 +137,7 @@ export default {
         align-items: center;
         font-size: 14px;
         text-align: center;
+        padding: 0 10px;
       }
     }
   }
