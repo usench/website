@@ -9,19 +9,27 @@
           <navigation title="终端管理" description="操作方便，工作高效" :active="actives[2]" @click="goTo(2)"/>
           <navigation title="文件管理" description="常用操作，整理归纳" :active="actives[3]" @click="goTo(3)"/>
         </div>
-        <div class="siema">
-          <carousel title="全部应用、已安装、可更新"
-                    description="通过web界面就可以轻松管理安装所用的服务器软件，还有扩展插件"
-                    :img="appStore"/>
-          <carousel title="数据库"
-                    description="一键创建数据库，一键设置备份还原"
-                    :img="appStore"/>
-          <carousel title="终端管理"
-                    description="高效管控，一键接入"
-                    :img="appStore"/>
-          <carousel title="文件管理"
-                    description="方便高效的文件管理器，支持上传、下载、打包、解压以及文件编辑查看"
-                    :img="appStore"/>
+        <div class="carousel-container">
+          <div class="siema">
+            <carousel title="全部应用、已安装、可更新"
+                      description="通过web界面就可以轻松管理安装所用的服务器软件，还有扩展插件"
+                      :img="appStore"/>
+            <carousel title="数据库"
+                      description="一键创建数据库，一键设置备份还原"
+                      :img="appStore"/>
+            <carousel title="终端管理"
+                      description="高效管控，一键接入"
+                      :img="appStore"/>
+            <carousel title="文件管理"
+                      description="方便高效的文件管理器，支持上传、下载、打包、解压以及文件编辑查看"
+                      :img="appStore"/>
+          </div>
+          <div class="cycle-navigation">
+            <div :class="['item',{'active':actives[0]}]" id="navigation1"></div>
+            <div :class="['item',{'active':actives[1]}]" id="navigation2"></div>
+            <div :class="['item',{'active':actives[2]}]" id="navigation3"></div>
+            <div :class="['item',{'active':actives[3]}]" id="navigation4"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -111,8 +119,9 @@ onBeforeUnmount(() => {
 
     .content {
       display: flex;
-      align-items: flex-start;
-      gap: 44px;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
 
       .navigation {
         display: flex;
@@ -129,9 +138,31 @@ onBeforeUnmount(() => {
       }
     }
 
-    .siema {
-      flex: 1;
-      width: 660px;
+    .carousel-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 788px;
+    }
+
+    .cycle-navigation {
+      display: none;
+      @media only screen and (max-width: 833px) {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .item {
+        width: 10px;
+        height: 10px;
+        border: 5px solid #8F959E;
+        border-radius: 10px;
+
+        &.active {
+          border: 5px solid #005eeb;
+        }
+      }
     }
   }
 }
