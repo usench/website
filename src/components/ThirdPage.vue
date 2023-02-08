@@ -115,6 +115,12 @@ onBeforeUnmount(() => {
       line-height: 48px;
       text-align: center;
       color: #646A73;
+
+      @media only screen and (max-width: 833px) {
+        font-size: 24px;
+        line-height: 36px;
+        height: 36px;
+      }
     }
 
     .content {
