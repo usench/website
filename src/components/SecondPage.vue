@@ -104,20 +104,26 @@ export default {
       justify-content: center;
       color: #646A73;
       @media only screen and (max-width: 833px) {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 24px;
+        line-height: 24px;
+        height: 36px;
       }
     }
 
     .description {
       font-weight: 400;
       font-size: 20px;
-      line-height: 48px;
-      height: 48px;
+      line-height: 36px;
+      height: 36px;
       display: flex;
       justify-content: center;
       text-align: center;
       color: #646A73;
+      @media only screen and (max-width: 833px) {
+        font-size: 16px;
+        line-height: 24px;
+        height: 24px;
+      }
     }
   }
 
@@ -128,7 +134,7 @@ export default {
     gap: 8px;
 
     width: 100%;
-    height: 350px;
+    height: 240px;
 
     @media only screen and (max-width: 833px) {
       align-items: center;
@@ -146,33 +152,6 @@ export default {
       align-items: center;
       text-align: center;
       color: #646A73;
-    }
-
-    .text-1 {
-      @extend .flex-text;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 48px;
-      @media only screen and (max-width: 833px) {
-        font-size: 24px;
-        line-height: 36px;
-      }
-    }
-
-    .split {
-      @extend .flex-text;
-      width: 15px;
-      height: 48px;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 48px;
-      color: #005EEB;
-
-      @media only screen and (max-width: 833px) {
-        font-size: 16px;
-        line-height: 20px;
-        padding: 0 10px;
-      }
     }
 
     .text-2 {

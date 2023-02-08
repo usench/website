@@ -89,8 +89,6 @@ export default {
       gap: 20px;
 
       height: 182px;
-      min-height: 182px;
-
       font-weight: 500;
       font-size: 48px;
       line-height: 44px;
@@ -99,9 +97,10 @@ export default {
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
 
       @media only screen and (max-width: 833px) {
+        height: 140px;
         gap: 10px;
-        font-size: 32px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 20px;
         align-items: center;
         text-align: center;
       }

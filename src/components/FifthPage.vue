@@ -191,6 +191,10 @@ export default defineComponent({
           margin-top: 20px;
           font-size: 24px;
           line-height: 32px;
+          @media only screen and (max-width: 833px) {
+            font-size: 20px;
+            line-height: 24px;
+          }
         }
 
         .description {
