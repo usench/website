@@ -48,7 +48,7 @@ export default {
 </script>
 
 <script setup lang="ts">
-import appStore from "../assets/app-store.png"
+import appStore from "../../assets/app-store.png"
 import Siema from 'siema';
 import {onBeforeUnmount, onMounted, ref} from "vue";
 

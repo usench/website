@@ -7,17 +7,17 @@
       </div>
       <div class="content" ref="content" id="card-content">
         <div class="card">
-          <img src="../assets/rocket.png" alt="伴随你公司的成长"/>
+          <img src="../../assets/rocket.png" alt="伴随你公司的成长"/>
           <div class="title">伴随你公司的成长</div>
           <div class="description">从你的第一个服务器到无数个服务器，1Panel 通通帮你搞定服务器管理问题</div>
         </div>
         <div class="card">
-          <img src="../assets/lightning.png" alt="高效运维面板"/>
+          <img src="../../assets/lightning.png" alt="高效运维面板"/>
           <div class="title">高效运维面板</div>
           <div class="description">支持一键 网站/数据库/容器服务/监控/网站/FTP/文件管理等100多项服务器管理功能</div>
         </div>
         <div class="card">
-          <img src="../assets/document.png" alt="详尽的教程和文档"/>
+          <img src="../../assets/document.png" alt="详尽的教程和文档"/>
           <div class="title">详尽的教程和文档</div>
           <div class="description">提供手把手的和基于使用场景的文档，避免繁琐的概念</div>
         </div>

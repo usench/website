@@ -6,7 +6,7 @@
         <div class="title">自定义品牌元素</div>
         <div class="description">快速自定义品牌元素例如: Logo、App 标语、整体视觉呈现，可开启或切换深色模式</div>
       </div>
-      <img src="../assets/custom.png" alt="自定义品牌元素">
+      <img src="../../assets/custom.png" alt="自定义品牌元素">
     </div>
   </div>
 </template>
