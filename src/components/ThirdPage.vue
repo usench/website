@@ -15,10 +15,10 @@
                       description="通过web界面就可以轻松管理安装所用的服务器软件，还有扩展插件"
                       :img="appStore"/>
             <carousel title="数据库"
-                      description="一键创建数据库，一键设置备份还原"
+                      description="创建 mysql、postgresql、redis 等数据库，支持备份，一键备份、还原"
                       :img="appStore"/>
             <carousel title="终端管理"
-                      description="高效管控，一键接入"
+                      description="以 Web 应用程序的方式使用命令行，操作方便，工作高效"
                       :img="appStore"/>
             <carousel title="文件管理"
                       description="方便高效的文件管理器，支持上传、下载、打包、解压以及文件编辑查看"
