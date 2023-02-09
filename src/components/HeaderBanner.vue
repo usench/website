@@ -7,26 +7,18 @@
       <div class="split">
       </div>
       <div class="nav">
-        <a class="nav-item" href="/" rel="noopener">主页</a>
         <a class="nav-item" href="https://1panel.cn/docs" target="_blank" rel="noopener">文档</a>
-        <a class="nav-item" href="https://blog.fit2cloud.com/" target="_blank" rel="noopener">博客</a>
         <a class="nav-item" href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener">GitHub</a>
-        <a class="nav-item" href="https://www.fit2cloud.com/about/index.html" target="_blank"
-           rel="noopener">联系我们</a>
       </div>
-      <a class="gold-btn ripple" rel="noopener">
-        快速开始
-        <img src="../assets/plane-white.png" alt="plane">
+      <a class="demo-btn ripple" rel="noopener">
+        立即体验
+        <img src="../assets/plane-white.png" alt="立即体验">
       </a>
       <div class="dropdown">
         <div class="dropdown-toggle" @click="toggle"><img src="../assets/menu.svg" alt="Menu"></div>
         <div class="dropdown-menu" v-if="active">
-          <a class="link" href="/" rel="noopener">主页</a>
           <a class="link" href="https://1panel.cn/docs" target="_blank" rel="noopener">文档</a>
-          <a class="link" href="https://blog.fit2cloud.com/" target="_blank" rel="noopener">博客</a>
           <a class="link" href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener">GitHub</a>
-          <a class="link" href="https://www.fit2cloud.com/about/index.html" target="_blank"
-             rel="noopener">联系我们</a>
         </div>
       </div>
     </div>
@@ -120,7 +112,7 @@ const toggle = () => {
       }
     }
 
-    .gold-btn {
+    .demo-btn {
       font-weight: 400;
       font-size: 14px;
       display: flex;

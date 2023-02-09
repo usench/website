@@ -1,8 +1,8 @@
 <template>
-  <div class="second-page">
+  <div class="features-page">
     <div id="section-1">
       <div class="title">1Panel可以帮你很多</div>
-      <div class="description">高效管理、安全可靠、一键备份、快速建站</div>
+      <div class="description">高效管理、快速建站、安全可靠、一键备份</div>
     </div>
 
     <div id="section-2">
@@ -18,6 +18,16 @@
     <div id="section-3">
       <div class="section-wrapper">
         <div class="content">
+          <div class="text-2">快速建站</div>
+          <div class="text-3">域名绑定，一键部署SSL证书，更改网站配置等网站管理功能</div>
+        </div>
+        <img src="../assets/illustration-05.png" alt="建站"/>
+      </div>
+    </div>
+
+    <div id="section-4">
+      <div class="section-wrapper">
+        <div class="content">
           <div class="text-2">搭建安全可靠的服务器</div>
           <div class="text-3">防火墙，安全审计，最小漏洞暴露面、快速修复</div>
         </div>
@@ -25,23 +35,13 @@
       </div>
     </div>
 
-    <div id="section-4">
+    <div id="section-5">
       <div class="section-wrapper">
         <div class="content reverse">
-          <div class="text-2">快速备份还原，稳定可靠</div>
+          <div class="text-2">快速备份还原</div>
           <div class="text-3">一键备份，一键恢复，即可防备数据丢失，也可快速复制服务器</div>
         </div>
         <img class="left" src="../assets/illustration-04.png" alt="备份"/>
-      </div>
-    </div>
-
-    <div id="section-5">
-      <div class="section-wrapper">
-        <div class="content">
-          <div class="text-2">快速建站</div>
-          <div class="text-3">域名绑定，一键部署SSL证书，更改网站配置等网站管理功能</div>
-        </div>
-        <img src="../assets/illustration-05.png" alt="建站"/>
       </div>
     </div>
   </div>
@@ -49,12 +49,12 @@
 
 <script>
 export default {
-  name: 'SecondPage'
+  name: 'FeaturesPage'
 }
 </script>
 
 <style lang="scss" scoped>
-.second-page {
+.features-page {
   --backgroud-color-odd: #FFF;
   --backgroud-color-even: rgba(0, 94, 235, 0.03);
 

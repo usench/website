@@ -7,10 +7,6 @@
         <div class="arrow-down"></div>
       </div>
       <div class="content">
-        <div class="card" id="1">
-          <div class="title">微信公众号</div>
-          <img src="../assets/wechat-official.jpeg" alt="微信公众号"/>
-        </div>
         <div class="card">
           <div class="title">技术交流群</div>
           <img src="../assets/wechat-group.png" alt="技术交流群"/>

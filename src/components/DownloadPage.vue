@@ -1,6 +1,6 @@
 <template>
-  <div class="fourth-page">
-    <div class="fourth-page-container">
+  <div class="download-page">
+    <div class="download-page-container">
       <div class="title">下载并使用</div>
       <div class="description">只需一行脚本代码，即可快速安装使用</div>
       <div class="install-window">
@@ -27,7 +27,7 @@ import Typed from "typed.js";
 import Scrolls from "@/scroll";
 
 export default defineComponent({
-  name: "FourthPage",
+  name: "DownloadPage",
   setup() {
     onMounted(() => {
       let typing = true
@@ -64,10 +64,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.fourth-page {
-  background-color: #FFF;
+.download-page {
+  background-color: rgba(0, 94, 235, 0.03);
 
-  .fourth-page-container {
+  .download-page-container {
     display: flex;
     flex-direction: column;
     justify-content: center;

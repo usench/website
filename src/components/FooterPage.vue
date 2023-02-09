@@ -5,16 +5,13 @@
       <div class="line"/>
       <div class="footer">
         <div class="info">
-          <div class="text">Designed by FIT2CLOUD Inc.</div>
           <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">浙ICP备14038283号-5</a>
         </div>
 
         <div class="links">
           <a href="https://1panel.cn/docs" target="_blank" rel="noopener">文档</a>
           <a href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://blog.fit2cloud.com/" target="_blank" rel="noopener">博客</a>
           <a href="https://www.fit2cloud.com/about/index.html" target="_blank">关于我们</a>
-          <a href="mailto:support@fit2cloud.com">联系我们</a>
         </div>
       </div>
     </div>
@@ -76,12 +73,6 @@ export default {
         align-items: center;
         display: flex;
         gap: 20px;
-
-        .text {
-          @media only screen and (max-width: 833px) {
-            display: none;
-          }
-        }
       }
 
       .links {
