@@ -122,7 +122,7 @@ export default {
         @extend .btn;
 
         color: #FFF;
-        background-color: #1F2329;
+        background-color: #24292f;
         border: 1px solid #5f5d67;
         box-shadow: 0 0 4px #5f5d67;
 
