@@ -50,10 +50,14 @@ const toggle = () => {
 
   .banner-wrapper {
     max-width: 1128px;
+    height: 56px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (max-width: 833px) {
+      height: 48px;
+    }
 
     .logo img {
       height: 36px;
