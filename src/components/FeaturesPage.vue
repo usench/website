@@ -8,7 +8,7 @@
     <div id="section-2">
       <div class="section-wrapper">
         <div class="content reverse">
-          <div class="text-2">简化服务器管理，提高效率</div>
+          <div class="text-2">高效管理</div>
           <div class="text-3">可视化管理，操作简单，快速建站，一键安装各种应用</div>
         </div>
         <img class="left" src="../assets/illustration-02.png" alt="高效"/>
@@ -28,7 +28,7 @@
     <div id="section-4">
       <div class="section-wrapper">
         <div class="content">
-          <div class="text-2">搭建安全可靠的服务器</div>
+          <div class="text-2">安全可靠</div>
           <div class="text-3">防火墙，安全审计，最小漏洞暴露面、快速修复</div>
         </div>
         <img src="../assets/illustration-03.png" alt="安全"/>
@@ -38,7 +38,7 @@
     <div id="section-5">
       <div class="section-wrapper">
         <div class="content reverse">
-          <div class="text-2">快速备份还原</div>
+          <div class="text-2">一键备份</div>
           <div class="text-3">一键备份，一键恢复，即可防备数据丢失，也可快速复制服务器</div>
         </div>
         <img class="left" src="../assets/illustration-04.png" alt="备份"/>
