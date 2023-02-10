@@ -16,9 +16,9 @@
       </a>
       <div class="dropdown">
         <div class="dropdown-toggle" @click="toggle"><img src="../assets/menu.svg" alt="Menu"></div>
-        <div class="dropdown-menu" v-if="active">
-          <a class="link" href="https://1panel.cn/docs" target="_blank" rel="noopener">文档</a>
-          <a class="link" href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener">GitHub</a>
+        <div class="dropdown-menu" v-if="active" ref="menu">
+          <a class="link" href="https://1panel.cn/docs" target="_blank" rel="noopener" @click="close">文档</a>
+          <a class="link" href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener" @click="close">GitHub</a>
         </div>
       </div>
     </div>
@@ -26,18 +26,30 @@
 </template>
 
 <script lang="ts">
+
 export default {
-  name: 'HeaderBanner'
+  name: 'HeaderBanner',
 }
 </script>
 
 <script setup lang="ts">
+import {onClickOutside} from "@vueuse/core";
 import {ref} from "vue";
 
 let active = ref(false)
 const toggle = () => {
   active.value = !active.value
 }
+
+const close = () => {
+  active.value = false
+}
+
+const menu = ref(null)
+onClickOutside(menu, () => {
+  close()
+})
+
 </script>
 
 <style lang="scss" scoped>
