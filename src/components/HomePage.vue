@@ -44,17 +44,17 @@ export default {
 
   .home-page-container {
     @extend .flex-column-center-center;
-    gap: 40px;
+    gap: 80px;
 
     max-width: 1128px;
     min-height: 100vh;
     margin: 0 auto;
-    padding-top: 80px;
 
     .title {
+      font-size: 64px;
       font-weight: 500;
-      font-size: 48px;
-      line-height: 48px;
+      line-height: 64px;
+      margin-top: 120px;
 
       color: #005EEB;
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
@@ -79,24 +79,31 @@ export default {
     .buttons {
       @extend .flex-column-center-center;
       flex-direction: row;
-      gap: 20px;
+      gap: 40px;
 
       .btn {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 16px;
 
         user-select: none;
         cursor: pointer;
 
-        width: 140px;
-        height: 48px;
+        width: 160px;
+        height: 64px;
         border-radius: 12px;
 
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 20px;
+
+        @media only screen and (max-width: 833px) {
+          width: 140px;
+          height: 48px;
+          font-size: 16px;
+          line-height: 16px;
+        }
 
         &:active {
           transform: scale(0.95);
@@ -114,7 +121,10 @@ export default {
         box-shadow: 0 0 4px var(--primary-color);
 
         img {
-          width: 16px;
+          width: 22px;
+          @media only screen and (max-width: 833px) {
+            display: none;
+          }
         }
       }
 
@@ -127,7 +137,10 @@ export default {
         box-shadow: 0 0 4px #5f5d67;
 
         img {
-          width: 20px;
+          width: 24px;
+          @media only screen and (max-width: 833px) {
+            display: none;
+          }
         }
       }
     }
