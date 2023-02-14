@@ -13,7 +13,7 @@
         </div>
         <div class="card">
           <div class="title">开源社区</div>
-          <a href="https://github.com/1Panel-dev/1Panel">
+          <a href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener">
             <img src="../assets/github.svg" alt="开源社区"/>
           </a>
         </div>
