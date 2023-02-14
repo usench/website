@@ -27,21 +27,21 @@
 
     <div id="section-4">
       <div class="section-wrapper">
-        <div class="content">
+        <div class="content reverse">
           <div class="text-2">安全可靠</div>
           <div class="text-3">防火墙，安全审计，最小漏洞暴露面、快速修复</div>
         </div>
-        <img src="../assets/illustration-03.png" alt="安全"/>
+        <img class="left" src="../assets/illustration-03.png" alt="安全"/>
       </div>
     </div>
 
     <div id="section-5">
       <div class="section-wrapper">
-        <div class="content reverse">
+        <div class="content">
           <div class="text-2">一键备份</div>
           <div class="text-3">一键备份，一键恢复，即可防备数据丢失，也可快速复制服务器</div>
         </div>
-        <img class="left" src="../assets/illustration-04.png" alt="备份"/>
+        <img src="../assets/illustration-04.png" alt="备份"/>
       </div>
     </div>
   </div>
@@ -181,7 +181,7 @@ export default {
   img {
     width: 480px;
     position: absolute;
-    right: -80px;
+    right: 0;
     @media only screen and (max-width: 833px) {
       width: 100%;
       position: relative;
