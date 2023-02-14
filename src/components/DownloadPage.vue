@@ -123,7 +123,7 @@ export default defineComponent({
       color: #FFFFFF;
       width: 100%;
       height: 100%;
-      padding: 104px 48px 48px;
+      padding: 84px 48px 48px;
       box-sizing: border-box;
       letter-spacing: -.02em;
       word-break: break-all;
