@@ -98,6 +98,8 @@ export default {
         font-weight: 500;
         line-height: 20px;
 
+        -webkit-user-drag: none;
+
         @media only screen and (max-width: 833px) {
           width: 140px;
           height: 48px;
