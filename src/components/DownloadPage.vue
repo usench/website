@@ -13,7 +13,7 @@
               <span> curl -sSL https://github.com/1Panel-dev/1Panel/releases/latest/download/quick_start.sh -o quick_start.sh && bash quick_start.sh</span>
             </p>
             <p>Installing.^200.^300.^400 Completed!</p>
-            <p style="color: #98c379">server is running at http://localhost:8080</p>
+            <p style="color: #98c379">server is running at http://localhost:9999</p>
           </div>
         </div>
       </div>
