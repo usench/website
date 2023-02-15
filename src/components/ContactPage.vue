@@ -9,7 +9,7 @@
       <div class="content">
         <div class="card">
           <div class="title">技术交流群</div>
-          <img src="../assets/wechat-group.png" alt="技术交流群"/>
+          <img src="../assets/wechat-group.jpg" alt="技术交流群"/>
         </div>
         <div class="card">
           <div class="title">开源社区</div>
