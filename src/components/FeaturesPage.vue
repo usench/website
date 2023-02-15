@@ -8,20 +8,21 @@
     <div id="section-2">
       <div class="section-wrapper">
         <div class="content reverse">
-          <div class="text-2">高效管理</div>
-          <div class="text-3">可视化管理，操作简单，快速建站，一键安装各种应用</div>
+          <div class="text-2">快速建站</div>
+          <div class="text-3">深度集成 Wordpress 和 Halo，域名绑定、SSL 证书配置等一键搞定</div>
         </div>
-        <img class="left" src="../assets/illustration-02.png" alt="高效"/>
+        <img class="left" src="../assets/illustration-05.png" alt="建站"/>
       </div>
     </div>
 
     <div id="section-3">
       <div class="section-wrapper">
         <div class="content">
-          <div class="text-2">快速建站</div>
-          <div class="text-3">域名绑定，一键部署SSL证书，更改网站配置等网站管理功能</div>
+          <div class="text-2">高效管理</div>
+          <div class="text-3" style="max-width: 648px">通过 Web 端轻松管理 Linux 服务器，包括主机监控、文件管理、数据库管理、容器管理及常用应用软件管理
+          </div>
         </div>
-        <img src="../assets/illustration-05.png" alt="建站"/>
+        <img src="../assets/illustration-02.png" alt="高效"/>
       </div>
     </div>
 
@@ -29,7 +30,7 @@
       <div class="section-wrapper">
         <div class="content reverse">
           <div class="text-2">安全可靠</div>
-          <div class="text-3">防火墙，安全审计，最小漏洞暴露面、快速修复</div>
+          <div class="text-3">最小漏洞暴露面，提供防火墙和安全审计等功能</div>
         </div>
         <img class="left" src="../assets/illustration-03.png" alt="安全"/>
       </div>
@@ -39,7 +40,7 @@
       <div class="section-wrapper">
         <div class="content">
           <div class="text-2">一键备份</div>
-          <div class="text-3">一键备份，一键恢复，即可防备数据丢失，也可快速复制服务器</div>
+          <div class="text-3">支持一键备份和恢复，备份数据云端存储，永不丢失</div>
         </div>
         <img src="../assets/illustration-04.png" alt="备份"/>
       </div>
@@ -142,6 +143,7 @@ export default {
 
     &.reverse {
       align-items: flex-end;
+
       @media only screen and (max-width: 833px) {
         align-items: center;
       }
@@ -150,7 +152,6 @@ export default {
     .flex-text {
       display: flex;
       align-items: center;
-      text-align: center;
       color: #646A73;
     }
 
@@ -160,6 +161,7 @@ export default {
       font-size: 40px;
       line-height: 48px;
       @media only screen and (max-width: 833px) {
+        text-align: center;
         font-size: 24px;
         line-height: 36px;
       }
@@ -170,7 +172,9 @@ export default {
       font-weight: 400;
       font-size: 24px;
       line-height: 48px;
+
       @media only screen and (max-width: 833px) {
+        text-align: center;
         font-size: 16px;
         line-height: 24px;
         padding: 0 10px;
@@ -185,7 +189,6 @@ export default {
     @media only screen and (max-width: 833px) {
       width: 100%;
       position: relative;
-      right: 0;
       object-fit: contain;
     }
   }
