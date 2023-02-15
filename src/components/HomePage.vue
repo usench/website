@@ -16,7 +16,7 @@
           <img src="../assets/github-logo.svg" alt="plane">
         </a>
       </div>
-      <img src="../assets/app-store.png" alt="1Panel"/>
+      <img src="../assets/overview.png" alt="1Panel"/>
     </div>
   </div>
 </template>
