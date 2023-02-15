@@ -10,7 +10,7 @@
         <a class="nav-item" href="https://1panel.cn/docs" target="_blank" rel="noopener">文档</a>
         <a class="nav-item" href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener">GitHub</a>
       </div>
-      <a class="demo-btn ripple" href="https://1panel.fit2cloud.com/" target="_blank" rel="noopener">
+      <a class="demo-btn ripple" href="https://demo.1panel.cn/" target="_blank" rel="noopener">
         立即体验
         <img src="../assets/plane-white.png" alt="立即体验">
       </a>

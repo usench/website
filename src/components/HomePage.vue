@@ -7,7 +7,7 @@
         <div> Linux 面板</div>
       </div>
       <div class="buttons">
-        <a class="quick-start-btn ripple" href="https://1panel.fit2cloud.com/" target="_blank" rel="noopener">
+        <a class="quick-start-btn ripple" href="https://demo.1panel.cn/" target="_blank" rel="noopener">
           <div>立即体验</div>
           <img src="../assets/plane-white.png" alt="plane">
         </a>
