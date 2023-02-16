@@ -1,10 +1,10 @@
 <template>
   <div class="home-page">
     <div class="home-page-container">
-      <div class="title">现代化、开源的 Linux 服务器运管管理面板</div>
+      <div class="title">现代化、开源的 Linux 服务器运维管理面板</div>
       <div class="title-mobile">
         <div>现代化、开源的</div>
-        <div> Linux 服务器运管管理面板</div>
+        <div> Linux 服务器运维管理面板</div>
       </div>
       <div class="buttons">
         <a class="quick-start-btn ripple" href="https://demo.1panel.cn/" target="_blank" rel="noopener">
@@ -44,20 +44,24 @@ export default {
 
   .home-page-container {
     @extend .flex-column-center-center;
-    gap: 80px;
+    gap: 40px;
 
     max-width: 1128px;
     min-height: 100vh;
     margin: 0 auto;
 
     .title {
-      font-size: 64px;
+      font-size: 56px;
       font-weight: 500;
-      line-height: 64px;
-      margin-top: 120px;
+      line-height: 56px;
 
-      color: #005EEB;
+      color: var(--primary-color);
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
+
+      div {
+        text-align: center;
+        padding: 8px;
+      }
 
       @media only screen and (max-width: 833px) {
         display: none;
@@ -66,7 +70,7 @@ export default {
 
     .title-mobile {
       display: none;
-      color: #005EEB;
+      color: var(--primary-color);
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
       font-size: 24px;
       line-height: 36px;
