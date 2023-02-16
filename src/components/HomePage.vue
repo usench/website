@@ -1,10 +1,10 @@
 <template>
   <div class="home-page">
     <div class="home-page-container">
-      <div class="title">一个现代化的、开源的 Linux 面板</div>
+      <div class="title">现代化、开源的 Linux 服务器运管管理面板</div>
       <div class="title-mobile">
-        <div>一个现代化的、开源的</div>
-        <div> Linux 面板</div>
+        <div>现代化、开源的</div>
+        <div> Linux 服务器运管管理面板</div>
       </div>
       <div class="buttons">
         <a class="quick-start-btn ripple" href="https://demo.1panel.cn/" target="_blank" rel="noopener">
