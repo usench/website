@@ -1,19 +1,20 @@
 <template>
   <div class="download-page">
     <div class="download-page-container">
-      <div class="title">下载并使用</div>
+      <div class="title">快速开始</div>
       <div class="description">只需一行脚本代码，即可快速安装使用</div>
       <div class="install-window">
         <div id="type-code"></div>
         <div id="typed-strings">
           <div class="type-style">
             <p>
+              <span>INSTALL_MODE=stable bash -c "$(</span>
               <span style="color: #f3e5c8">curl </span>
-              <span style="color: #e06c75"> -sSL</span>
-              <span> curl -sSL https://github.com/1Panel-dev/1Panel/releases/latest/download/quick_start.sh -o quick_start.sh && bash quick_start.sh</span>
+              <span style="color: #e06c75">-sSL </span>
+              <span>http://1panel.oss-cn-hangzhou.aliyuncs.com/package/quick_start.sh)"</span>
             </p>
             <p>Installing.^200.^300.^400 Completed!</p>
-            <p style="color: #98c379">server is running at http://localhost:8080</p>
+            <p style="color: #98c379">server is running at http://localhost:9999</p>
           </div>
         </div>
       </div>
