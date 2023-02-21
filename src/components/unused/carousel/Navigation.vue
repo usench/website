@@ -4,8 +4,8 @@
       <div class="subject">
         <div class="title">{{ title }}</div>
         <div class="icon">
-          <img src="../../assets/arrow-blue.png" v-if="active">
-          <img src="../../assets/arrow-grey.png" v-else>
+          <img src="../../../assets/arrow-blue.png" v-if="active">
+          <img src="../../../assets/arrow-grey.png" v-else>
         </div>
       </div>
       <div class="description">{{ description }}</div>
@@ -86,7 +86,7 @@ defineProps({
       .icon {
         width: 30px;
         height: 30px;
-        background: url("../../assets/circle.png") center/30px 30px;
+        background: url("../../../assets/circle.png") center/30px 30px;
 
         display: flex;
         align-items: center;

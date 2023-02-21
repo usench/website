@@ -5,11 +5,31 @@ body {
   --primary-hover-color: #005EEBCC;
   --padding-max-width: 0;
   height: 100%;
+  padding: 0 !important;
 }
 
 * {
   box-sizing: border-box;
 }
+
+// 滚动条整体部分
+::-webkit-scrollbar {
+  width: 6px; // 纵向滚动条宽度
+  height: 6px; // 横向滚动条高度
+}
+
+// 滑块
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #88898a;
+}
+
+// 轨道
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: transparent;
+}
+
 
 .ripple {
   overflow: hidden;

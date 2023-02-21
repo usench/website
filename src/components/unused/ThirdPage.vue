@@ -38,8 +38,8 @@
 
 <script lang="ts">
 
-import Navigation from '@/components/carousel/Navigation.vue';
-import Carousel from '@/components/carousel/Carousel.vue';
+import Navigation from '@/components/unused/carousel/Navigation.vue';
+import Carousel from '@/components/unused/carousel/Carousel.vue';
 
 export default {
   name: 'ThirdPage',

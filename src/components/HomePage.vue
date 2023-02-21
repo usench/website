@@ -16,15 +16,36 @@
           <img src="../assets/github-logo.svg" alt="plane">
         </a>
       </div>
-      <img src="../assets/overview.png" alt="1Panel"/>
+      <div>
+        <img id="image" src="../assets/overview.png" alt="1Panel"/>
+      </div>
     </div>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'HomePage'
 }
+</script>
+
+<script lang="ts" setup>
+import Viewer from 'viewerjs'
+import {onMounted, onUnmounted} from "vue";
+
+let viewer: Viewer;
+
+onMounted(() => {
+  let image = document.getElementById('image') as HTMLImageElement;
+  viewer = new Viewer(image, {
+    navbar: false,
+    toolbar: false
+  });
+});
+
+onUnmounted(() => {
+  viewer.destroy();
+});
 </script>
 
 <style lang="scss" scoped>
