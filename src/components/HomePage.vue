@@ -175,6 +175,7 @@ onUnmounted(() => {
     img {
       width: 100%;
       max-width: 1128px;
+      cursor: pointer;
     }
   }
 }
