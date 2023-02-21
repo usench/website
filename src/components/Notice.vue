@@ -53,6 +53,11 @@ const close = () => {
   .text {
     font-size: 14px;
     color: #ffffff;
+    text-align: center;
+    @media only screen and (max-width: 833px) {
+      padding: 0 24px;
+      font-size: 12px;
+    }
   }
 
   .close {
@@ -66,6 +71,10 @@ const close = () => {
 
     border: none;
     cursor: pointer;
+
+    @media only screen and (max-width: 833px) {
+      font-size: 14px;
+    }
 
     &:active {
       transform: scale(0.9);
