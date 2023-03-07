@@ -70,6 +70,7 @@ onUnmounted(() => {
     max-width: 1128px;
     min-height: 100vh;
     margin: 0 auto;
+    padding-top: 80px;
 
     .title {
       font-size: 56px;
@@ -78,9 +79,9 @@ onUnmounted(() => {
 
       color: var(--primary-color);
       text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
+      text-align: center;
 
       div {
-        text-align: center;
         padding: 8px;
       }
 
