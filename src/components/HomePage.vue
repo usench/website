@@ -1,11 +1,8 @@
 <template>
   <div class="home-page">
     <div class="home-page-container">
-      <div class="title">现代化、开源的 Linux 服务器运维管理面板</div>
-      <div class="title-mobile">
-        <div>现代化、开源的</div>
-        <div> Linux 服务器运维管理面板</div>
-      </div>
+      <div class="title-1">开源，现代化</div>
+      <div class="title-2">1Panel 是新一代的 Linux 服务器运维管理面板</div>
       <div class="buttons">
         <a class="quick-start-btn ripple" href="https://demo.1panel.cn/" target="_blank" rel="noopener">
           <div>立即体验</div>
@@ -72,21 +69,29 @@ onUnmounted(() => {
     margin: 0 auto;
     padding-top: 80px;
 
-    .title {
-      font-size: 56px;
-      font-weight: 500;
-      line-height: 56px;
+    .title-1 {
+      font-size: 96px;
+      font-weight: 900;
 
       color: var(--primary-color);
-      text-shadow: 2px 2px 4px rgba(6, 0, 45, 0.2);
       text-align: center;
 
-      div {
-        padding: 8px;
+      @media only screen and (max-width: 833px) {
+        font-size: 36px;
       }
+    }
+
+    .title-2 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 30px;
+
+      color: #646A73;
+      text-align: center;
 
       @media only screen and (max-width: 833px) {
-        display: none;
+        padding: 0 12px;
+        font-size: 20px;
       }
     }
 
