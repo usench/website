@@ -8,10 +8,9 @@
         <div id="typed-strings">
           <div class="type-style">
             <p>
-              <span>INSTALL_MODE=stable bash -c "$(</span>
               <span style="color: #f3e5c8">curl </span>
               <span style="color: #e06c75">-sSL </span>
-              <span>https://resource.fit2cloud.com/1panel/package/quick_start.sh)"</span>
+              <span>https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh</span>
             </p>
             <p>Installing.^200.^300.^400 Completed!</p>
             <p style="color: #98c379">server is running at http://localhost:9999</p>
