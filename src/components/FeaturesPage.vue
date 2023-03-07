@@ -11,7 +11,7 @@
           <div class="text-2">快速建站</div>
           <div class="text-3">深度集成 Wordpress 和 Halo，域名绑定、SSL 证书配置等一键搞定</div>
         </div>
-        <img class="left" src="../assets/【插图】快速建站.svg" alt="快速建站"/>
+        <img class="left" src="../assets/建站3.png" alt="快速建站"/>
       </div>
     </div>
 
@@ -22,7 +22,7 @@
           <div class="text-3" style="max-width: 648px">通过 Web 端轻松管理 Linux 服务器，包括主机监控、文件管理、数据库管理、容器管理及常用应用软件管理
           </div>
         </div>
-        <img src="../assets/【插图】高效管理.svg" alt="高效管理"/>
+        <img src="../assets/主机.png" alt="高效管理"/>
       </div>
     </div>
 
@@ -32,7 +32,7 @@
           <div class="text-2">安全可靠</div>
           <div class="text-3">最小漏洞暴露面，提供防火墙和安全审计等功能</div>
         </div>
-        <img class="left" src="../assets/【插图】安全可靠.svg" alt="安全可靠"/>
+        <img class="left" src="../assets/防火墙.png" alt="安全可靠"/>
       </div>
     </div>
 
@@ -42,7 +42,7 @@
           <div class="text-2">一键备份</div>
           <div class="text-3">支持一键备份和恢复，备份数据云端存储，永不丢失</div>
         </div>
-        <img src="../assets/【插图】一键备份.svg" alt="一键备份"/>
+        <img src="../assets/辅助20.png" alt="一键备份"/>
       </div>
     </div>
   </div>
