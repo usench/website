@@ -2,7 +2,7 @@
   <div class="features-page">
     <div id="section-1">
       <div class="title">1Panel可以帮你很多</div>
-      <div class="description">高效管理、快速建站、安全可靠、一键备份</div>
+      <div class="description">快速建站、高效管理、安全可靠、一键备份</div>
     </div>
 
     <div id="section-2">
