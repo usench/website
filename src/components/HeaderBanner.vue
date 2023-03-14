@@ -8,18 +8,22 @@
       <div class="split">
       </div>
       <div class="nav">
-        <a class="nav-item" href="https://1panel.cn/docs" target="_blank" rel="noopener">文档</a>
-        <a class="nav-item" href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener">GitHub</a>
+        <a class="nav-item" href="https://1panel.cn/docs" target="_blank">文档</a>
+        <a class="nav-item" href="https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760"
+           target="_blank">教学视频</a>
+        <a class="nav-item" href="https://github.com/1Panel-dev/1Panel" target="_blank">GitHub</a>
       </div>
-      <a class="demo-btn ripple" href="https://demo.1panel.cn/" target="_blank" rel="noopener">
+      <a class="demo-btn ripple" href="https://demo.1panel.cn/" target="_blank">
         立即体验
         <img src="../assets/plane-white.png" alt="立即体验">
       </a>
       <div class="dropdown">
         <div class="dropdown-toggle" @click="toggle"><img src="../assets/menu.svg" alt="Menu"></div>
         <div class="dropdown-menu" v-if="active" ref="menu">
-          <a class="link" href="https://1panel.cn/docs" target="_blank" rel="noopener" @click="close">文档</a>
-          <a class="link" href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener" @click="close">GitHub</a>
+          <a class="link" href="https://1panel.cn/docs" target="_blank" @click="close">文档</a>
+          <a href="https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760" target="_blank"
+             @click="close">教学视频</a>
+          <a class="link" href="https://github.com/1Panel-dev/1Panel" target="_blank" @click="close">GitHub</a>
         </div>
       </div>
     </div>
