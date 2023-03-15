@@ -13,7 +13,7 @@
               <span>https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh</span>
             </p>
             <p>Installing.^200.^300.^400 Completed!</p>
-            <p style="color: #98c379">server is running at http://localhost:9999</p>
+            <p style="color: #98c379">server is running at http://目标服务器 IP:目标端口</p>
           </div>
         </div>
       </div>
