@@ -1,6 +1,5 @@
 <template>
   <div class="banner">
-    <notice/>
     <div class="banner-wrapper">
       <a class="logo" href="/">
         <img src="../assets/logo-blue.png" alt="logo"/>
@@ -40,7 +39,6 @@ export default {
 <script setup lang="ts">
 import {onClickOutside} from "@vueuse/core";
 import {ref} from "vue";
-import Notice from "@/components/Notice.vue";
 
 let active = ref(false)
 const toggle = () => {
