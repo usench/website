@@ -1,5 +1,5 @@
 <template>
-  <div class="download-page">
+  <div id="quick-start" class="download-page">
     <div class="download-page-container">
       <div class="title">快速开始</div>
       <div class="description">只需一行脚本代码，即可快速安装使用</div>
@@ -13,7 +13,7 @@
               <span>https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh</span>
             </p>
             <p>Installing.^200.^300.^400 Completed!</p>
-            <p style="color: #98c379">server is running at http://目标服务器 IP:目标端口</p>
+            <p style="color: #98c379">Server is running at http://&lt;Target Server IP&gt;:&lt;Port&gt;</p>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@ export default defineComponent({
       background-size: contain;
 
       @media only screen and (max-width: 833px) {
-        background:#464646;
+        background: #464646;
         border-radius: 20px;
         width: 90%;
         min-height: 320px;

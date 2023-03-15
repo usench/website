@@ -10,7 +10,7 @@
         <a class="nav-item" href="https://1panel.cn/docs" target="_blank">文档</a>
         <a class="nav-item" href="https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760"
            target="_blank">教学视频</a>
-        <a class="nav-item" href="https://github.com/1Panel-dev/1Panel" target="_blank">GitHub</a>
+        <a class="nav-item" @click="scrollTo">下载安装</a>
       </div>
       <a class="demo-btn ripple" href="https://demo.1panel.cn/" target="_blank">
         立即体验
@@ -20,9 +20,9 @@
         <div class="dropdown-toggle" @click="toggle"><img src="../assets/menu.svg" alt="Menu"></div>
         <div class="dropdown-menu" v-if="active" ref="menu">
           <a class="link" href="https://1panel.cn/docs" target="_blank" @click="close">文档</a>
-          <a href="https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760" target="_blank"
+          <a class="link" href="https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760" target="_blank"
              @click="close">教学视频</a>
-          <a class="link" href="https://github.com/1Panel-dev/1Panel" target="_blank" @click="close">GitHub</a>
+          <a class="link" @click="scrollTo">下载安装</a>
         </div>
       </div>
     </div>
@@ -47,6 +47,14 @@ const toggle = () => {
 
 const close = () => {
   active.value = false
+}
+
+const scrollTo = () => {
+  const el = document.querySelector('#quick-start')
+  if (el) {
+    el.scrollIntoView({behavior: 'smooth'})
+  }
+  close()
 }
 
 const menu = ref(null)
