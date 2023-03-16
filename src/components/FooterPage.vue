@@ -2,12 +2,17 @@
   <div class="footer-page">
     <div class="footer-container">
       <div class="navigation">
-        <div class="name">FIT2CLOUD 飞致云</div>
+        <div class="name">
+          FIT2CLOUD 飞致云
+        </div>
         <div class="links">
           <a href="https://1panel.cn/docs" target="_blank">文档</a>
           <a href="https://github.com/1Panel-dev/1Panel" target="_blank">GitHub</a>
           <a href="https://www.fit2cloud.com/about/index.html" target="_blank">关于我们</a>
         </div>
+      </div>
+      <div class="core_value">
+        我们秉持“软件用起来才有价值，才有改进的机会”的核心价值观，向中国数字化团队交付被广泛验证、可信赖的通用工具软件。
       </div>
       <div class="line"/>
       <div class="license">
@@ -55,6 +60,7 @@ export default {
         justify-content: center;
       }
 
+
       .name {
         color: #f8f9fc;
         font-size: 20px;
@@ -76,6 +82,19 @@ export default {
       }
     }
 
+    .core_value {
+      width: 350px;
+      color: #adb5bd;
+      font-size: 14.4px;
+      line-height: 1.5;
+      font-weight: 300;
+      margin-top: 10px;
+      @media only screen and (max-width: 833px) {
+        padding: 0 12px;
+      }
+    }
+
+
     .line {
       border-top: 1px solid rgba(243, 229, 200, 0.26);
       margin: 24px 0;
@@ -91,6 +110,7 @@ export default {
       p {
         color: #adb5bd;
         font-weight: 300;
+        font-size: 14.4px;
         font-family: "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", sans-serif;
         text-align: center;
 
