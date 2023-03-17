@@ -53,7 +53,7 @@
 
     let typed = new Typed('#type-code', options)
 
-    const scrollCode = function () {
+    window.onscroll = function () {
       const scrollCardElement = document.getElementById('type-code');
       let rect = scrollCardElement.getBoundingClientRect();
       let {top} = rect;
@@ -66,8 +66,6 @@
         typed.reset(true)
       }
     }
-
-    window.onscroll = scrollCode
   }
 
   $(document).ready(function () {
@@ -75,6 +73,4 @@
     initView()
     initScroll()
   })
-
-
 }(jQuery)
