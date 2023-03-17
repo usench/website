@@ -4,7 +4,7 @@
   const initMenu = () => {
     const container = $('.dropdown-menu');
 
-    $('.menu_download').on('click', function () {
+    $('.menu_download').on('click', () => {
       $('#quick-start')[0].scrollIntoView({behavior: 'smooth'})
     });
 
@@ -16,14 +16,14 @@
       }
     })
 
-    $(document).on('mousedown', function (e) {
+    $(document).on('mousedown', e => {
       const container = $('.dropdown-menu');
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         container.hide();
       }
     })
 
-    $('.dropdown-menu .dropdown-item').on('click', function () {
+    $('.dropdown-menu .dropdown-item').on('click', () => {
       container.hide();
     })
   }
@@ -34,7 +34,7 @@
       toolbar: false
     });
 
-    $(window).on('unload', function () {
+    $(window).on('unload', () => {
       viewer.destroy();
     })
   }
@@ -53,7 +53,7 @@
 
     let typed = new Typed('#type-code', options)
 
-    window.onscroll = function () {
+    window.onscroll = () => {
       const scrollCardElement = document.getElementById('type-code');
       let rect = scrollCardElement.getBoundingClientRect();
       let {top} = rect;
