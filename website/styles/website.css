@@ -344,7 +344,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
 }
 
 .features-page #section-1 .title {
@@ -388,7 +388,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
   width: 100%;
   height: 240px;
 }
@@ -445,7 +445,7 @@
 }
 
 .features-page img {
-  width: 480px;
+  width: 420px;
   position: absolute;
   right: 0;
 }
@@ -459,7 +459,7 @@
 }
 
 .features-page img.left {
-  left: -80px;
+  left: 0;
 }
 
 @media only screen and (max-width: 833px) {
@@ -488,7 +488,7 @@
   font-size: 36px;
   line-height: 44px;
   color: #646A73;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 @media only screen and (max-width: 833px) {
@@ -571,7 +571,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  gap: 8px;
+  gap: 16px;
   color: #FFFFFF;
 }
 
