@@ -73,4 +73,4 @@
     initView()
     initScroll()
   })
-}(jQuery)
+}(window.jQuery)
