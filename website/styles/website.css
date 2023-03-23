@@ -231,7 +231,7 @@
   gap: 40px;
 }
 
-.home-page .home-page-container .buttons .btn, .home-page .home-page-container .buttons .github-btn, .home-page .home-page-container .buttons .quick-start-btn {
+.home-page .home-page-container .buttons .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,7 +249,7 @@
 }
 
 @media only screen and (max-width: 833px) {
-  .home-page .home-page-container .buttons .btn, .home-page .home-page-container .buttons .github-btn, .home-page .home-page-container .buttons .quick-start-btn {
+  .home-page .home-page-container .buttons .btn {
     width: 140px;
     height: 48px;
     font-size: 16px;
@@ -257,25 +257,26 @@
   }
 }
 
-.home-page .home-page-container .buttons .btn:active, .home-page .home-page-container .buttons .github-btn:active, .home-page .home-page-container .buttons .quick-start-btn:active {
+.home-page .home-page-container .buttons .btn:active {
   transform: scale(0.95);
 }
 
-.home-page .home-page-container .buttons .quick-start-btn {
+@media only screen and (max-width: 833px) {
+  .home-page .home-page-container .buttons .btn img {
+    display: none;
+  }
+}
+
+.home-page .home-page-container .buttons .download-btn {
   color: #FFF;
   background: var(--primary-color);
   border: 1px solid var(--primary-color);
   box-shadow: 0 0 4px var(--primary-color);
 }
 
-.home-page .home-page-container .buttons .quick-start-btn img {
-  width: 22px;
-}
-
-@media only screen and (max-width: 833px) {
-  .home-page .home-page-container .buttons .quick-start-btn img {
-    display: none;
-  }
+.home-page .home-page-container .buttons .download-btn img {
+  width: 20px;
+  height: 20px;
 }
 
 .home-page .home-page-container .buttons .github-btn {
@@ -287,12 +288,7 @@
 
 .home-page .home-page-container .buttons .github-btn img {
   width: 24px;
-}
-
-@media only screen and (max-width: 833px) {
-  .home-page .home-page-container .buttons .github-btn img {
-    display: none;
-  }
+  height: 24px;
 }
 
 .home-page .home-page-container img {
@@ -465,90 +461,6 @@
 @media only screen and (max-width: 833px) {
   .features-page img.left {
     left: 0;
-  }
-}
-
-.download-page {
-  background-color: rgba(0, 94, 235, 0.03);
-}
-
-.download-page .download-page-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1128px;
-  margin: 0 auto;
-  position: relative;
-  height: 600px;
-}
-
-.download-page .download-page-container .title {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-  color: #646A73;
-  margin-bottom: 16px;
-}
-
-@media only screen and (max-width: 833px) {
-  .download-page .download-page-container .title {
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-
-.download-page .download-page-container .description {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #646A73;
-  margin-bottom: 24px;
-}
-
-@media only screen and (max-width: 833px) {
-  .download-page .download-page-container .description {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-
-.download-page .download-page-container .install-window {
-  width: 720px;
-  min-height: 368px;
-  background: url("../img/window.svg") no-repeat center center;
-  background-size: contain;
-}
-
-@media only screen and (max-width: 833px) {
-  .download-page .download-page-container .install-window {
-    background: #464646;
-    border-radius: 20px;
-    width: 90%;
-    min-height: 320px;
-  }
-}
-
-.download-page .download-page-container #type-code {
-  color: #FFFFFF;
-  width: 100%;
-  height: 100%;
-  padding: 84px 48px 48px;
-  box-sizing: border-box;
-  letter-spacing: -0.02em;
-  word-break: break-all;
-  font-family: monospace;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 28px;
-}
-
-@media only screen and (max-width: 833px) {
-  .download-page .download-page-container #type-code {
-    padding: 24px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
   }
 }
 

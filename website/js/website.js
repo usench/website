@@ -4,11 +4,7 @@
   const initMenu = () => {
     const container = $('.dropdown-menu');
 
-    $('.menu_download').on('click', () => {
-      $('#quick-start')[0].scrollIntoView({behavior: 'smooth'})
-    });
-
-    $('.dropdown-toggle').on('click', function () {
+    $('.dropdown-toggle').on('click', () => {
       if (container.is(':visible')) {
         container.hide();
       } else {
@@ -39,38 +35,8 @@
     })
   }
 
-  const initScroll = () => {
-    let typing = true
-
-    let options = {
-      stringsElement: '#typed-strings',
-      typeSpeed: 10,
-      showCursor: false,
-      onComplete: () => {
-        typing = false
-      }
-    };
-
-    let typed = new Typed('#type-code', options)
-
-    window.onscroll = () => {
-      const scrollCardElement = document.getElementById('type-code');
-      let rect = scrollCardElement.getBoundingClientRect();
-      let {top} = rect;
-      let windowHeight = document.documentElement.clientHeight;
-      const TopPadding = 128
-      const TextHeight = 112
-
-      if (top > windowHeight - TopPadding - TextHeight && top < windowHeight - TopPadding && !typing) {
-        typing = true
-        typed.reset(true)
-      }
-    }
-  }
-
-  $(document).ready(function () {
+  $(document).ready(() => {
     initMenu()
     initView()
-    initScroll()
   })
 }(window.jQuery)
